@@ -37,3 +37,43 @@
 
 // *********AS WE KNOW THAT THIS TOO IS NOT A GOOD APPROACH TO SOLVE THIS, AND HERE COMES THE 'GENERICS'************
 
+// type clientDetail = {
+//     name: "Client_Name",
+//     age: 22
+// }
+
+// type adminDetail = {
+//     userName: "Admin",
+//     role: "Admin"
+// }
+
+// function getUserData<T>(details:T):T{
+//     return details
+// }
+
+// const adminDetailSection = getUserData(adminDetail)
+// const clientDetailSection = getUserData(clientDetail)
+
+// adminDetailSection.role   
+// WHEN WE USE THE INTELLISENSE WE WILL GET THE CORRECT OUTPUT. ie is the main useCase of "GENERICS". 
+
+// Thats all to know more about GENERICS. This is really important grind this to know more..
+
+// ______________________________INTERFACE_____________________________
+
+// IN INTERFACE IS THERE IS NO BIG CHANGES IN THE CODE, BUT THE CHANGES WILL BE ON THE OBJECT CREATION SECTION, ie, 
+// EG:
+//  interface clientDetail  {
+//     name: "Client_Name",
+//     age: 22
+// }
+
+// interface adminDetail extends clientDetail {}
+
+// WHAT IS HAPPENING IN HERE IS WE JUST ADD clientDetail with the adminDetail AND IN INTERFACE WE USE EXTENDS KEYWORD WITH THE INTERFACE. 
+
+
+//________________ ENUMS/ AS CONST____________________
+// _______________KEYOF/ TYPE OF_______________________
+// _______________UTILITY TYPES_______________________
+// _______________ANY/ UNKNOWN/NEVER/VOID______________
